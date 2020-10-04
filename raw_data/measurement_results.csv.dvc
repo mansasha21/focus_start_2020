@@ -1,0 +1,3 @@
+outs:
+- md5: d83782f0c88851f431b74922385dbaa2
+  path: raw_data/measurement_results.csv

@@ -1,0 +1,3 @@
+outs:
+- md5: b65a272551c82423290c4887d57368fc
+  path: raw_data/weather_train.csv

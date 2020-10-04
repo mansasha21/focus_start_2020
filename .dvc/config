@@ -1,0 +1,4 @@
+[core]
+    remote = focus_start
+['remote "focus_start"']
+    url = gdrive://1MZUfAMEjXJMYKgMUcvfMx-qpGaXeLfXo

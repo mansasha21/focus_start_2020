@@ -1,0 +1,5 @@
+focus_on_dvc/
+venv/
+.ipynb_checkpoints/
+SQL_Query.ipynb
+keys/
