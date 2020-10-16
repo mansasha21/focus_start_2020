@@ -4,4 +4,4 @@ jupyter
 pydrive2
 dvc[gdrive]
 dvc[all]
-
+pyarrow
