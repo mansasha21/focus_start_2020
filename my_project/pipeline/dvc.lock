@@ -1,0 +1,36 @@
+base_part:
+  cmd: python -u ../services/base_part.py
+  deps:
+  - path: ../services/base_part.py
+    md5: 5a6fd9beb1b465e2df865836aec79afc
+  outs:
+  - path: ../data/base_part.fthr
+    md5: 1b738546e0575c918fdc28644af2edce
+feature1:
+  cmd: python -u ../services/feature1.py
+  deps:
+  - path: ../services/feature1.py
+    md5: 1decc79d8dab26b1397da9141ce4ac5a
+  outs:
+  - path: ../data/feature1.fthr
+    md5: 2c1919486a59a190565d593395946f0a
+feature2:
+  cmd: python -u ../services/feature2.py
+  deps:
+  - path: ../services/feature2.py
+    md5: 3467d87ed2c052881c05c5611ae19413
+  outs:
+  - path: ../data/feature2.fthr
+    md5: 24a6d2a20e211e042a6721189630e4ae
+model:
+  cmd: python -u ../services/model.py
+  deps:
+  - path: ../data/base_part.fthr
+    md5: 1b738546e0575c918fdc28644af2edce
+  - path: ../data/feature1.fthr
+    md5: 2c1919486a59a190565d593395946f0a
+  - path: ../data/feature2.fthr
+    md5: 24a6d2a20e211e042a6721189630e4ae
+  outs:
+  - path: ../data/model.pickle
+    md5: 69501048195a4d77e3f076d76e5a7184
