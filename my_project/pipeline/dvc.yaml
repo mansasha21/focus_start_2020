@@ -1,0 +1,27 @@
+stages:
+  base_part:
+    cmd: python -u ../services/base_part.py
+    deps:
+    - ../services/base_part.py
+    outs:
+    - ../data/base_part.fthr
+  feature1:
+    cmd: python -u ../services/feature1.py
+    deps:
+    - ../services/feature1.py
+    outs:
+    - ../data/feature1.fthr
+  feature2:
+    cmd: python -u ../services/feature2.py
+    deps:
+    - ../services/feature2.py
+    outs:
+    - ../data/feature2.fthr
+  model:
+    cmd: python -u ../services/model.py
+    deps:
+    - ../data/base_part.fthr
+    - ../data/feature1.fthr
+    - ../data/feature2.fthr
+    outs:
+    - ../data/model.pickle
